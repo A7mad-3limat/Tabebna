@@ -1,0 +1,12 @@
+:root {
+  --color-primary-deep-blue: #003366;
+  --color-secondary-blue: #0052a3;
+  --color-accent-gold: #ffc107;
+  --color-accent-gold-hover: #ffb300;
+  --color-text-dark: #1a1a1a;
+  --color-white: #ffffff;
+  --color-background: #f4f7f6;
+  --color-border: #e0e0e0;
+  --shadow-lg: 0 4px 6px rgba(0,0,0,0.1);
+  --border-radius-xl: 12px;
+}

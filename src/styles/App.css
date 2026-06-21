@@ -1,0 +1,59 @@
+@import './variables.css';
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('./bg-medical.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  color: #fff;
+}
+.App {
+  min-height: 100vh;
+  background: transparent;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-layout {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.home-filter-column {
+  width: 280px;
+  flex-shrink: 0;
+}
+
+.home-results-column {
+  flex: 1;
+}
+
+.home-results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.home-results-title {
+  margin: 0;
+}
+
+.home-add-doctor-link {
+  background: #005b4f;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.home-loading-state {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}

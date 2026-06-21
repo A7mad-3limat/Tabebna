@@ -1,0 +1,204 @@
+.add-doctor-container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  min-height: 80vh !important;
+  background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('./bg-medical.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding: 2rem !important;
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+.add-doctor-shell {
+  width: 100%;
+  max-width: 800px;
+  direction: rtl;
+}
+
+.back-to-home-button {
+  background: transparent !important;
+  border: none !important;
+  color: #f5f7ff !important;
+  cursor: pointer !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+  margin-bottom: 15px !important;
+  padding: 0 !important;
+  text-align: right !important;
+}
+
+.back-to-home-button:hover {
+  color: #ffffff !important;
+}
+
+.add-doctor-card {
+  background: rgba(255, 255, 255, 0.9) !important;
+  padding: 30px !important;
+  border-radius: 16px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  width: 100% !important;
+  max-width: 800px !important;
+  margin: 40px auto !important;
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+.add-doctor-card h2 {
+  color: #003366 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0.5rem !important;
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+.add-doctor-card p,
+.add-doctor-form label,
+.add-doctor-form small {
+  color: #333 !important;
+}
+
+
+.add-doctor-form {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 24px !important;
+  direction: rtl !important;
+  width: 100% !important;
+}
+
+.add-doctor-form .form-group {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  margin-bottom: 0 !important;
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+.add-doctor-form .form-group.full-width {
+  grid-column: 1 / -1 !important;
+  width: 100% !important;
+}
+
+.add-doctor-form label {
+  font-weight: bold !important;
+  margin-bottom: 0.5rem !important;
+  color: #333 !important;
+  display: block !important;
+  text-align: right !important;
+  direction: rtl !important;
+  width: 100% !important;
+}
+
+.add-doctor-form input,
+.add-doctor-form select,
+.add-doctor-form textarea {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  padding: 12px !important;
+  border: 1px solid #ddd !important;
+  border-radius: 8px !important;
+  font-size: 1rem !important;
+  font-family: inherit !important;
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+.add-doctor-form input:focus,
+.add-doctor-form select:focus,
+.add-doctor-form textarea:focus {
+  outline: none !important;
+  border-color: #003366 !important;
+  box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.1) !important;
+}
+
+.submit-btn {
+  grid-column: 1 / -1 !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  background: #c6e3ff !important;
+  color: white !important;
+  border: none !important;
+  padding: 14px !important;
+  border-radius: 8px !important;
+  font-size: 1.1rem !important;
+  font-weight: bold !important;
+  cursor: pointer !important;
+  transition: background 0.3s !important;
+  text-align: center !important;
+  direction: rtl !important;
+}
+
+.submit-btn:hover {
+  background: #0052a3;
+}
+
+.add-doctor-form small {
+  color: #666 !important;
+  font-size: 0.85rem !important;
+  margin-top: 5px !important;
+  display: block !important;
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+.add-doctor-form textarea {
+  resize: vertical !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.add-doctor-rating-panel {
+  padding: 15px !important;
+  background: #f0f7ff !important;
+  border-radius: 10px !important;
+}
+
+.add-doctor-range {
+  width: 100% !important;
+  margin-top: 10px !important;
+}
+
+.add-doctor-comment-label {
+  margin-top: 15px !important;
+  display: block !important;
+}
+
+.add-doctor-comment {
+  margin-top: 10px !important;
+}
+
+.add-doctor-form input[type="range"] {
+  height: 6px !important;
+  cursor: pointer !important;
+  width: 100% !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .add-doctor-form {
+    grid-template-columns: 1fr !important;
+  }
+
+  .add-doctor-form .form-group.full-width {
+    grid-column: 1 !important;
+    width: 100% !important;
+  }
+
+  .add-doctor-card {
+    padding: 1.5rem !important;
+    max-width: 100% !important;
+  }
+
+  .add-doctor-container {
+    padding: 1rem !important;
+  }
+  
+}

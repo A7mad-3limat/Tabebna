@@ -1,0 +1,353 @@
+/* --- Page shell --- */
+.profile-page-shell {
+  min-height: 100vh;
+  padding: 20px;
+  background: transparent;
+}
+
+.profile-not-found {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.profile-not-found-button {
+  padding: 10px 20px;
+  background: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile-back-wrap {
+  max-width: 1200px;
+  margin: 0 auto 16px;
+}
+
+/* --- Main layout --- */
+
+/* --- Main layout --- */
+.doctor-profile-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* السحر اللي بمنع الكروت تفوت ببعض */
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  align-items: flex-start;
+  direction: rtl;
+  box-sizing: border-box;
+}
+
+.profile-sidebar-wrapper {
+  flex: 0 0 350px; /* حجم ثابت ممنوع ينضغط أو يصغر */
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  position: relative;
+  right: -49px;
+  top: 80px;
+}
+
+.profile-main-content {
+  flex: 1 1 0%;
+  min-width: 300px; /* إجبار القسم إنه ما ينفعص */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+}
+/* --- Shared glass cards --- */
+.profile-sidebar,
+.info-section,
+.reviews-section,
+.review-form-card,
+.review-card,
+.clinic-location-card {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.16) !important;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.profile-sidebar {
+  width: 100%;
+  padding: 24px;
+  text-align: center;
+}
+
+.profile-doctor-image {
+  width: 130px;
+  height: 130px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #f0f4f8;
+}
+
+.profile-doctor-name {
+  margin: 0 0 5px;
+  color: #003366;
+  font-size: 24px;
+}
+
+.profile-doctor-specialty {
+  color: #28a745;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0 0 15px;
+}
+
+.profile-rating-box {
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.profile-rating-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333333;
+}
+
+.profile-rating-count {
+  font-size: 13px;
+  color: #888;
+}
+
+.profile-sidebar-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.profile-action-button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.profile-add-review-button {
+  background: #003366;
+  color: #fff;
+  border: none;
+}
+
+.profile-contact-button {
+  background: #ffc107;
+  color: #003366;
+  border: 2px solid #ffc107;
+}
+
+.profile-stars {
+  direction: ltr;
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.profile-star-slot {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+}
+
+.profile-star-base {
+  color: #e4e5e9;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  line-height: 1;
+}
+
+.profile-star-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  direction: ltr;
+  white-space: nowrap;
+  color: #ffc107;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-star-gold {
+  color: #ffc107;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  line-height: 1;
+}
+
+.info-section,
+.review-form-card,
+.reviews-section {
+  padding: 25px !important;
+  margin-bottom: 30px !important;
+}
+
+.clinic-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.clinic-location-card {
+  padding: 16px;
+}
+
+/* --- Typography visibility lock --- */
+.profile-main-content h2,
+.profile-main-content h3,
+.profile-main-content h4,
+.profile-main-content p,
+.profile-main-content div,
+.profile-main-content li {
+  color: #333333 !important;
+}
+
+.profile-main-content span:not([style*="#ffc107"]):not([style*="#e4e5e9"]) {
+  color: #333333 !important;
+}
+
+.profile-main-content h3,
+.profile-main-content h4 {
+  margin-top: 0;
+}
+
+/* --- Review section helpers --- */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.review-card {
+  padding: 16px;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.review-date {
+  color: #6b7280 !important;
+  font-size: 12px;
+}
+
+.review-text {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.review-content-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.report-review-button {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.review-highlight {
+  margin: 8px 0 0;
+  color: #16a34a !important;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.range-group {
+  margin-bottom: 12px;
+}
+
+.rating-range {
+  width: 100%;
+}
+
+.review-textarea {
+  width: 100%;
+  min-height: 90px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  padding: 20px;
+  font-family: inherit;
+  resize: vertical;
+  margin-bottom: 12px;
+  color: #333333;
+  background: #ffffff;
+}
+
+.submit-review-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #003366;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submit-review-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* --- Back button --- */
+.profile-back-button {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s ease;
+}
+
+.profile-back-button:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+  .doctor-profile-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .profile-sidebar-wrapper,
+  .profile-sidebar,
+  .profile-main-content {
+    width: 100%;
+    flex: none;
+    min-width: 0;
+    max-width: none;
+  }
+}

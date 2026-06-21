@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">doctor-rating-app</string>
+    <string name="title_activity_main">doctor-rating-app</string>
+    <string name="package_name">com.ahmad.tabeebna</string>
+    <string name="custom_url_scheme">com.ahmad.tabeebna</string>
+</resources>

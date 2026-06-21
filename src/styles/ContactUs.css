@@ -1,0 +1,91 @@
+:root {
+  /* بناء على متغيرات الستايل الموجودة في المشروع */
+  --bg-white: #ffffff;
+  --text-primary: #1a1a1a;
+  --input-border: #c4c4c4;
+  --deep-blue: #0b3d91;
+  --deep-blue-hover: #0a357d;
+  --shadow-card: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.contact-us-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #004085;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.contact-us-card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--bg-white);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  padding: 36px;
+}
+
+.contact-us-title {
+  margin: 0 0 1.25rem;
+  color: var(--text-primary);
+  font-size: 1.75rem;
+  text-align: right;
+}
+
+.contact-us-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.contact-us-form label {
+  color: var(--text-primary);
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
+}
+
+.contact-us-form input,
+.contact-us-form textarea {
+  background: #fff;
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+  padding: 0.75rem 0.9rem;
+  font-size: 1rem;
+  color: #222;
+  direction: rtl;
+  text-align: right;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.contact-us-form input:focus,
+.contact-us-form textarea:focus {
+  border-color: var(--deep-blue);
+  box-shadow: 0 0 0 3px rgba(11, 61, 145, 0.14);
+}
+
+.contact-us-submit {
+  margin-top: 0.5rem;
+  padding: 0.85rem 1.25rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--deep-blue);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  align-self: flex-start;
+}
+
+.contact-us-submit:hover {
+  background: var(--deep-blue-hover);
+}
+
+.contact-us-submit:active {
+  transform: translateY(1px);
+}
